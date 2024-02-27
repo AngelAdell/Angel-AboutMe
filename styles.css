@@ -1,42 +1,57 @@
-*{
-    /* Extra small devices (phones, 600px and down) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+/* media queries */
+
 @media only screen and (max-width: 600px) {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    body {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 
 /* Navigation & Header */
+
+.header img {
+    background-color: #fff;
+    color: #fff;
+    align-items: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #174789;
+  }
+
 nav {
     display: flex;
     flex-direction: row;
@@ -70,6 +85,7 @@ nav ul li {
 }
 
 
+
 /* Body and Main background */
 main {
     min-height: 100vh;
@@ -91,6 +107,42 @@ footer {
     padding: 1rem 0;
 }
 
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /* Path: aboutMe/index.html */
 /* About Me */
 .about {
@@ -105,6 +157,11 @@ footer {
 }
 
 /* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
 
 /* Portfolio Page */
 
