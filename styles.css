@@ -40,16 +40,24 @@
 
 
 /* Navigation & Header */
+header {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+}
 
 .header img {
-    background-color: #fff;
-    color: #fff;
+    display: flex;
     align-items: center;
+    width: 200px;
+    height: 100px;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #174789;
+    background-color: #fff;
+    padding: 0%;
   }
 
 nav {
@@ -68,10 +76,7 @@ nav a {
     text-decoration: none;
     padding: 0 1rem;
 }
-nav img {
-    width: 200px;
-    height: 100px;
-}
+
 nav ul {
     display: flex;
     list-style: none;
